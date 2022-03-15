@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ini Tugas</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="src/settings.js"></script>
+</head>
+
+<body>
+    <h1>Create Playlist</h1>
+    <br>
+    <div>
+        <center><img
+                src="https://bestprofilepictures.com/wp-content/uploads/2020/07/Awesome-Profile-Picture-For-Facebook.jpg"
+                class="img"></center>
+    </div>
+    <div class="login">
+        <form action="#" onSubmit="validasi()">
+            <div>
+                <label>Title:</label>
+                <input type="title" name="title" id="title" />
+            </div>
+            <div>
+                <label>Artist:</label>
+                <input type="artist" name="artist" id="artist" />
+            </div>
+            <div>
+                <label>Albums:</label>
+                <select type="albums" id="albums" required>
+                    <option selected disabled value="">Pilih Albums...</option>
+                    <option>"모자를 눌러 쓰고"</option>
+                    <option>"Like Ooh-Ahh"</option>
+                    <option>"Tuk Tok"</option>
+                    <option>"Next Page"</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Buat" class="tombol">
+            </div>
+        </form>
+    </div>
+</body>
+<script type="text/javascript">
+    function validasi() {
+        var title = document.getElementById("title").value;
+        var artist = document.getElementById("artist").value;
+        var albums = document.getElementById("albums").value;
+        if (title != "" && artist != "" && albums != "") {
+            return alert('Anda Berhasil Menginput Playlist');
+        } else {
+            alert('Anda harus mengisi data dengan lengkap !');
+        }
+    }
+</script>
+
+</html>
